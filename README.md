@@ -8,6 +8,7 @@
   <li>Alex Duclos (ad19ua@brocku.ca) ID: 6738884</li>
   <li>Eduardo Saldana (es18za@brocku.ca) ID: 6612626</li>
   <li>Rishabh Rai (rr19pa@brocku.ca) ID: 6847156</li>
+  <li>Jashan Pannu (jp18jj@brocku.ca) ID: 6505861</li>
 </ul>
 
 # Description
