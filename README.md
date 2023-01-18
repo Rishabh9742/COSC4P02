@@ -12,7 +12,7 @@
 </ul>
 
 # Description
-This project is for the development of a virtual museum for the 4p02 class at Brock University. The goal of the project is to create an interactive and educational experience for users to learn about various exhibits and artifacts. The museum will feature a variety of exhibits and interactive elements to engage visitors.
+This project is for the development of a virtual museum for the 4p02 class at Brock University. The goal of the project is to create an interactive and educational experience for users to learn about various exhibits and artifacts. The museum will feature a variety of exhibits and interactive elements to engage visitors. The planned project will involve an interactive timeline for visitors to be able to have a more immersive experience.
 
 # Features
 <ul>
