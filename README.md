@@ -24,8 +24,8 @@ This project is for the development of a virtual museum for the 4p02 class at Br
 
 # Technologies Used
 <ul>
-  <li> Unity3D </li>
-  <li> C# </li>
+  <li> Python </li>
+  <li> Java </li>
   <li> Firebase </li>
 </ul>
 
