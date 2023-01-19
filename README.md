@@ -29,6 +29,9 @@ This project is for the development of a virtual museum for the 4p02 class at Br
   <li> Firebase </li>
 </ul>
 
+# Software Engineering Method
+Waterfall method, the reason we believe this is the superior method for our project is that it will all build from the previous submissions. It all simply continues to continiously grow and expand.
+
 # Contact
 If you have any questions or issues, please contact any of the group members or send an email to any or all group members. 
 
