@@ -11,12 +11,12 @@
   <li>Jashan Pannu (jp18jj@brocku.ca) ID: 6505861</li>
 </ul>
 
-#Roles
+# Roles
 <ul>
-  <il>Scrum Master: Alex Duclos</il>
-  <il>Product Owner: Rishabh Rai</il>
-  <il>Product Manager: Eduardo Saldana</il>
-  <il>Development Team: Gokutg Cirag, Jashan Pannu, Rishabh Rai, Alex Duclos, Eduardo Saldana</l>
+  <li>Scrum Master: Alex Duclos</li>
+  <li>Product Owner: Rishabh Rai</li>
+  <li>Product Manager: Eduardo Saldana</li>
+  <li>Development Team: Gokutg Cirag, Jashan Pannu, Rishabh Rai, Alex Duclos, Eduardo Saldana</li>
 </ul>
 
 # Description
