@@ -1,4 +1,4 @@
-4p02 Museum Project
+4P02 Museum Project
 ====================
 
 # Group Members
