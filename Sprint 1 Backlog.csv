@@ -1,0 +1,29 @@
+STORY ID,ITEM,USERSTORY,TASKS,STATUS
+1,Timeline and Nodes,"As an admin, I need to be able to add, delete and reorder nodes so I can manage the timeline.",Implement linked list data structure to represent timeline.,Not Started
+,,,Create add and delete functions. Nodes should be addable and deletable from any position in timeline.,Not Started
+,,,"Create function for reorder interaction, let admin choose a node and choose its new position, shifting existing nodes towards the end.",Not Started
+,,,,
+,,,,
+,,,,
+2,Node Data,"As an admin, I need to be able to add and edit information for each node so I can manage each virtual exhibit.","Implement the linked list data structure to represent the virtual 
+exhibit",Not Started
+,,,"Create add and delete functions. Nodes should be addable and 
+deletable from any position in the virtual exhibit.",Not Started
+,,,,
+,,,,
+,,,,
+,,,,
+4,Node Media,"As an admin, I need to be able to add and edit user accessible media within each node so I can manage what is displayed to users.",Create a function to add and edit user media within each node.,Not Started
+,,,create a function to manage what a user can and cannot see.,Not Started
+,,,,
+,,,,
+,,,,
+,,,,
+6,Nodes,"As a user, I should be able to select a node in the timeline and be able to access the information and media within it.",create a function to pick a specific node from the list. ,Not Started
+,,,create a function to access information within the node,Not Started
+,,,,
+,,,,
+,,,,
+,,,,
+11,Digital Tour,"As a user, I should have an option to be toured through the timeline and guided through nodes.","create an function to move through the timeline with the help of 
+nodes.",Not Started
