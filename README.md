@@ -20,14 +20,15 @@
 </ul>
 
 # Description
-This project is for the development of a virtual museum for the COSC 4P02 class at Brock University. The goal of the project is to create an interactive and educational experience for users to learn about various exhibits and artifacts. The museum will feature a variety of exhibits and interactive elements to engage visitors. The planned project will involve an interactive timeline for visitors to be able to have a more immersive experience.
+This project is for the development of a virtual museum for the COSC 4P02 class at Brock University. The goal of the project is to create an interactive, immersive and educational digital timeline for users to learn about various historical events. The museum will feature a variety of virtual exhibits and interactive elements to engage visitors. The planned project will involve a traversable interactive timeline for visitors to be able to have a more immersive experience.
 
 # Features
 <ul>
-  <li> Virtual tours of the museum's exhibits </li>
-  <li> Detailed information about artifacts and exhibits </li>
+  <li> Traversable interactive timeline of history shared in museum </li>
+  <li> Virtual tours of virtual exhibits </li>
+  <li> Detailed historical information events and historical figures </li>
   <li> Interactive elements such as quizzes and games </li>
-  <li> Search functionality to easily locate exhibits and artifacts </li>
+  <li> Search functionality to easily find information on events and artifacts </li>
 </ul>
 
 # Technologies Used
