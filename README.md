@@ -16,8 +16,8 @@
 
 # Roles
 <ul>
-  <li>Scrum Master: Alex Duclos</li>
-  <li>Product Owner: Rishabh Rai</li>
+  <li>Scrum Master: Rishabh Ra</li>
+  <li>Product Owner: Alex Duclos</li>
   <li>Product Manager: Eduardo Saldana</li>
   <li>Development Team: Gokutg Cirag, Jashan Pannu, Rishabh Rai, Alex Duclos, Eduardo Saldana</li>
 </ul>
@@ -37,8 +37,7 @@ This project is for the development of a virtual museum for the COSC 4P02 class 
 # Technologies Used
 <ul>
   <li> Python </li>
-  <li> Java </li>
-  <li> Firebase </li>
+  <li> Tkinter </li>
 </ul>
 
 # Software Engineering Method
