@@ -1,3 +1,5 @@
+from tkinter import *
+from tkinter import ttk
 import tkinter as tk
 import csv
 from PIL import Image, ImageTk
@@ -16,6 +18,11 @@ def append_to_csv():
             tk.messagebox.showinfo("Success", "Data appended to the CSV file.")
     except Exception as e:
         tk.messagebox.showerror("Error", f"Error occurred: {str(e)}")
+
+def clear_text():
+    title_entry.delete(0,tk.END)
+    description_entry.delete(0,tk.END)
+    image_url_entry.delete(0,END)
 
 root = tk.Tk()
 root.title("CSV Data Appender")
@@ -49,5 +56,8 @@ image_url_entry.pack()
 
 append_button = tk.Button(root, text="Append to CSV", command=append_to_csv)
 append_button.pack()
+
+delete_button = tk.Button(root, text="Clear Text", command=clear_text)
+delete_button.pack()
 
 root.mainloop()
