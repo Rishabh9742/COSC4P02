@@ -40,6 +40,11 @@ def previous_line():
     if line_num > 0:
         line_num -= 1
         show_data(line_num)
+        
+def jump_to_line():
+            global line_num
+            line_num = int(textbox.get()) -1
+            show_data(line_num)           
 
 root = tk.Tk()
 root.title("CSV Data Display")
@@ -50,6 +55,9 @@ label_title.pack()
 label_description = tk.Label(root, text="")
 label_description.pack()
 
+label_line = tk.Label(root, text="") #Label for textbox
+label_line.pack()
+
 label_image = tk.Label(root, image=None)
 label_image.pack()
 
@@ -59,8 +67,14 @@ button_next.pack()
 button_previous = tk.Button(root, text="Previous", command=previous_line)
 button_previous.pack()
 
-label_line = tk.Label(root, text="")
-label_line.pack()
+label_textbox = tk.Label(root, text="Jump to node:")#label to instruct use of button
+label_textbox.pack()
+
+textbox = tk.Entry(root)
+textbox.pack()
+
+button_go_to_line = tk.Button(root, text="Jump", command=jump_to_line)#jump button
+button_go_to_line.pack()
 
 show_data(line_num)
 root.mainloop()
