@@ -25,7 +25,7 @@ def clear_text():
     image_url_entry.delete(0,END)
 
 root = tk.Tk()
-root.geometry("200x300")
+root.geometry("200x350")
 root.title("CSV Data Appender")
 
 csv_file_label = tk.Label(root, text="Select a CSV file:")
@@ -54,6 +54,9 @@ image_url_label.pack()
 
 image_url_entry = tk.Entry(root)
 image_url_entry.pack()
+
+read_button = tk.Button(root, text="Read from CSV", command=append_to_csv, relief=RAISED)
+read_button.pack(pady=10)
 
 append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
 append_button.pack(pady=10)
