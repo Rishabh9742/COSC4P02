@@ -18,6 +18,19 @@ def append_to_csv():
             tk.messagebox.showinfo("Success", "Data appended to the CSV file.")
     except Exception as e:
         tk.messagebox.showerror("Error", f"Error occurred: {str(e)}")
+        
+def delete_from_csv():
+    try:
+        index = int(rowDel.get()) - 1
+        with open(root.filename, 'r') as file:
+            reader = csv.reader(file)
+            rows = list(reader)
+        with open(root.filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(rows[:index] + rows[index+1:])
+            tk.messagebox.showinfo("Success", "Row deleted from CSV file.")
+    except Exception as e:
+        tk.messagebox.showerror("Error", f"Error occurred: {str(e)}")        
 
 def clear_text():
     title_entry.delete(0,tk.END)
@@ -25,7 +38,7 @@ def clear_text():
     image_url_entry.delete(0,END)
 
 root = tk.Tk()
-root.geometry("200x350")
+root.geometry("200x375")
 root.title("CSV Data Appender")
 
 csv_file_label = tk.Label(root, text="Select a CSV file:")
@@ -55,16 +68,16 @@ image_url_label.pack()
 image_url_entry = tk.Entry(root)
 image_url_entry.pack()
 
-deleteRow_button = tk.Button(root, text="Delete from CSV", command=append_to_csv, relief=RAISED)
-deleteRow_button.pack(pady=10)
-
-rowDel = tk.Entry(root, width=3)
-rowDel.pack()
+delete_button = tk.Button(root, text="Clear Text", command=clear_text, relief=RAISED)
+delete_button.pack(pady=10)
 
 append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
 append_button.pack(pady=10)
 
-delete_button = tk.Button(root, text="Clear Text", command=clear_text, relief=RAISED)
-delete_button.pack(pady=10)
+deleteRow_button = tk.Button(root, text="Delete from CSV", command=delete_from_csv, relief=RAISED)
+deleteRow_button.pack(pady=10)
+
+rowDel = tk.Entry(root, width=3)
+rowDel.pack()
 
 root.mainloop()
