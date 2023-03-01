@@ -50,31 +50,28 @@ root = tk.Tk()
 root.title("CSV Data Display")
 
 label_title = tk.Label(root, text="")
-label_title.pack()
+label_title.grid(row=0, column=0, columnspan=3)
 
 label_description = tk.Label(root, text="")
-label_description.pack()
+label_description.grid(row=1, column=0, columnspan=3)
 
-label_line = tk.Label(root, text="") #Label for textbox
-label_line.pack()
+label_line = tk.Label(root, text="")
+label_line.grid(row=2, column=0, columnspan=3)
 
 label_image = tk.Label(root, image=None)
-label_image.pack()
+label_image.grid(row=3, column=0, columnspan=3)
 
-button_next = tk.Button(root, text="Next", command=next_line)
-button_next.pack()
+button_previous = tk.Button(root, text="<", command=previous_line)
+button_previous.grid(row=4, column=0, sticky='E')
 
-button_previous = tk.Button(root, text="Previous", command=previous_line)
-button_previous.pack()
+textbox = tk.Entry(root, width=3)
+textbox.grid(row=4, column=1)
 
-label_textbox = tk.Label(root, text="Jump to node:")#label to instruct use of button
-label_textbox.pack()
+button_next = tk.Button(root, text=">", command=next_line)
+button_next.grid(row=4, column=2, sticky='W')
 
-textbox = tk.Entry(root)
-textbox.pack()
-
-button_go_to_line = tk.Button(root, text="Jump", command=jump_to_line)#jump button
-button_go_to_line.pack()
+button_go_to_line = tk.Button(root, text="Jump to node", command=jump_to_line)
+button_go_to_line.grid(row=6, column=1)
 
 show_data(line_num)
 root.mainloop()
