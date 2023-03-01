@@ -55,8 +55,11 @@ image_url_label.pack()
 image_url_entry = tk.Entry(root)
 image_url_entry.pack()
 
-read_button = tk.Button(root, text="Read from CSV", command=append_to_csv, relief=RAISED)
-read_button.pack(pady=10)
+delete_button = tk.Button(root, text="Delete from CSV", command=append_to_csv, relief=RAISED)
+delete_button.pack(pady=10)
+
+rowDel = tk.Entry(root, width=3)
+rowDel.pack()
 
 append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
 append_button.pack(pady=10)
