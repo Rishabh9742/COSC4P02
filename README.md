@@ -16,7 +16,7 @@
 
 # Roles
 <ul>
-  <li>Scrum Master: Rishabh Ra</li>
+  <li>Scrum Master: Rishabh Rai</li>
   <li>Product Owner: Alex Duclos</li>
   <li>Product Manager: Eduardo Saldana</li>
   <li>Development Team: Gokutg Cirag, Jashan Pannu, Rishabh Rai, Alex Duclos, Eduardo Saldana</li>
