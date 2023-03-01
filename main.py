@@ -43,7 +43,7 @@ def previous_line():
         
 def jump_to_line():
             global line_num
-            line_num = int(textbox.get()) -1
+            line_num = int(nodeText.get()) -1
             show_data(line_num)           
 
 root = tk.Tk()
@@ -64,8 +64,8 @@ label_image.grid(row=3, column=0, columnspan=3)
 button_previous = tk.Button(root, text="<", command=previous_line)
 button_previous.grid(row=4, column=0, sticky='E')
 
-textbox = tk.Entry(root, width=3)
-textbox.grid(row=4, column=1)
+nodeText = tk.Entry(root, width=3)
+nodeText.grid(row=4, column=1)
 
 button_next = tk.Button(root, text=">", command=next_line)
 button_next.grid(row=4, column=2, sticky='W')
