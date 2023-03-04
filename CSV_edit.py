@@ -39,33 +39,48 @@ def clear_text():
 
 def main():
     root = tk.Tk()
-    root.title("CSV Data Display")
+    root.geometry("200x375")
+    root.title("CSV Data Appender")
 
-    label_title = tk.Label(root, text="")
-    label_title.grid(row=0, column=0, columnspan=3)
+    csv_file_label = tk.Label(root, text="Select a CSV file:")
+    csv_file_label.pack()
 
-    label_description = tk.Label(root, text="")
-    label_description.grid(row=1, column=0, columnspan=3)
+    csv_file_path = tk.Label(root, text="No CSV file selected")
+    csv_file_path.pack()
 
-    label_line = tk.Label(root, text="")
-    label_line.grid(row=2, column=0, columnspan=3)
+    csv_file_button = tk.Button(root, text="Browse", command=select_csv_file, relief=RAISED)
+    csv_file_button.pack(pady=10)
 
-    label_image = tk.Label(root, image=None)
-    label_image.grid(row=3, column=0, columnspan=3)
+    title_label = tk.Label(root, text="Title:")
+    title_label.pack()
 
-    button_previous = tk.Button(root, text="<", command=previous_line)
-    button_previous.grid(row=4, column=0, sticky='E')
+    title_entry = tk.Entry(root)
+    title_entry.pack()
 
-    nodeText = tk.Entry(root, width=3)
-    nodeText.grid(row=4, column=1)
+    description_label = tk.Label(root, text="Description:")
+    description_label.pack()
 
-    button_next = tk.Button(root, text=">", command=next_line)
-    button_next.grid(row=4, column=2, sticky='W')
+    description_entry = tk.Entry(root)
+    description_entry.pack()
 
-    button_go_to_line = tk.Button(root, text="Jump to node", command=jump_to_line)
-    button_go_to_line.grid(row=6, column=1)
+    image_url_label = tk.Label(root, text="Image URL:")
+    image_url_label.pack()
 
-    show_data(line_num)
+    image_url_entry = tk.Entry(root)
+    image_url_entry.pack()
+
+    delete_button = tk.Button(root, text="Clear Text", command=clear_text, relief=RAISED)
+    delete_button.pack(pady=10)
+
+    append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
+    append_button.pack(pady=10)
+
+    deleteRow_button = tk.Button(root, text="Delete from CSV", command=delete_from_csv, relief=RAISED)
+    deleteRow_button.pack(pady=10)
+
+    rowDel = tk.Entry(root, width=3)
+    rowDel.pack()
+
     root.mainloop()
 
 if __name__ == '__main__':
