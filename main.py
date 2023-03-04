@@ -46,7 +46,7 @@ def jump_to_line():
             line_num = int(nodeText.get()) -1
             show_data(line_num)           
 
-def main():
+    def main():
     root = tk.Tk()
     root.title("CSV Data Display")
 
