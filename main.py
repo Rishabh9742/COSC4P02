@@ -46,36 +46,32 @@ def jump_to_line():
             line_num = int(nodeText.get()) -1
             show_data(line_num)           
 
-    def main():
-    root = tk.Tk()
-    root.title("CSV Data Display")
+root = tk.Tk()
+root.title("CSV Data Display")
 
-    label_title = tk.Label(root, text="")
-    label_title.grid(row=0, column=0, columnspan=3)
+label_title = tk.Label(root, text="")
+label_title.grid(row=0, column=0, columnspan=3)
 
-    label_description = tk.Label(root, text="")
-    label_description.grid(row=1, column=0, columnspan=3)
+label_description = tk.Label(root, text="")
+label_description.grid(row=1, column=0, columnspan=3)
 
-    label_line = tk.Label(root, text="")
-    label_line.grid(row=2, column=0, columnspan=3)
+label_line = tk.Label(root, text="")
+label_line.grid(row=2, column=0, columnspan=3)
 
-    label_image = tk.Label(root, image=None)
-    label_image.grid(row=3, column=0, columnspan=3)
+label_image = tk.Label(root, image=None)
+label_image.grid(row=3, column=0, columnspan=3)
 
-    button_previous = tk.Button(root, text="<", command=previous_line)
-    button_previous.grid(row=4, column=0, sticky='E')
+button_previous = tk.Button(root, text="<", command=previous_line)
+button_previous.grid(row=4, column=0, sticky='E')
 
-    nodeText = tk.Entry(root, width=3)
-    nodeText.grid(row=4, column=1)
+nodeText = tk.Entry(root, width=3)
+nodeText.grid(row=4, column=1)
 
-    button_next = tk.Button(root, text=">", command=next_line)
-    button_next.grid(row=4, column=2, sticky='W')
+button_next = tk.Button(root, text=">", command=next_line)
+button_next.grid(row=4, column=2, sticky='W')
 
-    button_go_to_line = tk.Button(root, text="Jump to node", command=jump_to_line)
-    button_go_to_line.grid(row=6, column=1)
+button_go_to_line = tk.Button(root, text="Jump to node", command=jump_to_line)
+button_go_to_line.grid(row=6, column=1)
 
-    show_data(line_num)
-    root.mainloop()
-
-if __name__ == '__main__':
-    main()
+show_data(line_num)
+root.mainloop()
