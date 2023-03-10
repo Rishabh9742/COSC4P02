@@ -37,51 +37,47 @@ def clear_text():
     description_entry.delete(0,tk.END)
     image_url_entry.delete(0,END)
 
-def main():
-    root = tk.Tk()
-    root.geometry("200x375")
-    root.title("CSV Data Appender")
+root = tk.Tk()
+root.geometry("200x375")
+root.title("CSV Data Appender")
 
-    csv_file_label = tk.Label(root, text="Select a CSV file:")
-    csv_file_label.pack()
+csv_file_label = tk.Label(root, text="Select a CSV file:")
+csv_file_label.pack()
 
-    csv_file_path = tk.Label(root, text="No CSV file selected")
-    csv_file_path.pack()
+csv_file_path = tk.Label(root, text="No CSV file selected")
+csv_file_path.pack()
 
-    csv_file_button = tk.Button(root, text="Browse", command=select_csv_file, relief=RAISED)
-    csv_file_button.pack(pady=10)
+csv_file_button = tk.Button(root, text="Browse", command=select_csv_file, relief=RAISED)
+csv_file_button.pack(pady=10)
 
-    title_label = tk.Label(root, text="Title:")
-    title_label.pack()
+title_label = tk.Label(root, text="Title:")
+title_label.pack()
 
-    title_entry = tk.Entry(root)
-    title_entry.pack()
+title_entry = tk.Entry(root)
+title_entry.pack()
 
-    description_label = tk.Label(root, text="Description:")
-    description_label.pack()
+description_label = tk.Label(root, text="Description:")
+description_label.pack()
 
-    description_entry = tk.Entry(root)
-    description_entry.pack()
+description_entry = tk.Entry(root)
+description_entry.pack()
 
-    image_url_label = tk.Label(root, text="Image URL:")
-    image_url_label.pack()
+image_url_label = tk.Label(root, text="Image URL:")
+image_url_label.pack()
 
-    image_url_entry = tk.Entry(root)
-    image_url_entry.pack()
+image_url_entry = tk.Entry(root)
+image_url_entry.pack()
 
-    delete_button = tk.Button(root, text="Clear Text", command=clear_text, relief=RAISED)
-    delete_button.pack(pady=10)
+delete_button = tk.Button(root, text="Clear Text", command=clear_text, relief=RAISED)
+delete_button.pack(pady=10)
 
-    append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
-    append_button.pack(pady=10)
+append_button = tk.Button(root, text="Append to CSV", command=append_to_csv, relief=RAISED)
+append_button.pack(pady=10)
 
-    deleteRow_button = tk.Button(root, text="Delete from CSV", command=delete_from_csv, relief=RAISED)
-    deleteRow_button.pack(pady=10)
+deleteRow_button = tk.Button(root, text="Delete from CSV", command=delete_from_csv, relief=RAISED)
+deleteRow_button.pack(pady=10)
 
-    rowDel = tk.Entry(root, width=3)
-    rowDel.pack()
+rowDel = tk.Entry(root, width=3)
+rowDel.pack()
 
-    root.mainloop()
-
-if __name__ == '__main__':
-    main()
+root.mainloop()
