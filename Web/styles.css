@@ -9,7 +9,6 @@
     background-color: #1f1f1f;
   }
   
-  /* Style the title */
   #label_title {
     color: #fff;
     font-size: 36px;
@@ -17,8 +16,6 @@
     text-align: center;
     margin-top: 20px;
   }
-  
-  /* Style the description */
   #label_description {
     color: #fff;
     font-size: 18px;
@@ -26,7 +23,7 @@
     margin: 10px 0;
   }
   
-  /* Style the line number */
+  /* line number */
   #label_line {
     color: #fff;
     font-size: 24px;
@@ -34,7 +31,6 @@
     margin-bottom: 20px;
   }
   
-  /* Style the image */
   #label_image {
     display: block;
     margin: 0 auto;
@@ -43,7 +39,7 @@
     object-fit: contain; /* Fit image to container without cutting off any part */
   }
   
-  /* Style the button group */
+  /* button group */
   button {
     background-color: #343a40;
     border: none;
@@ -54,7 +50,6 @@
     padding: 10px;
   }
   
-  /* Style the input box */
   input[type=text] {
     background-color: #343a40;
     border: none;
@@ -65,7 +60,7 @@
     width: 200px;
   }
   
-  /* Apply flexbox to the button group and input box */
+  /* flexbox to the button group and input box */
   button, input[type=text] {
     display: block;
   }
@@ -76,6 +71,7 @@
     margin: 0 auto;
   }
 
+   /* Border for the image */
   img#label_image {
     max-width: calc(100vw / 3);
     height: auto;
