@@ -4,6 +4,9 @@
 # Live Product and Sprint Backlogs
 [Backlogs Sheet](https://docs.google.com/spreadsheets/d/1FwdKNZmc1wWEivzn2ezl59bVdrNpcElhstLYFrKzrvw/edit?usp=sharing)
 
+# View the live HTML page for index.html
+[Webpage](https://htmlpreview.github.io/?https://github.com/Rishabh9742/COSC4P02/blob/main/Web/index.html)
+
 # Group Members
 
 <ul>
