@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a dark background color to the body */
+  body {
+    background-color: #1f1f1f;
+  }
+  
+  /* Style the title */
+  #label_title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the description */
+  #label_description {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Style the line number */
+  #label_line {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the image */
+  #label_image {
+    display: block;
+    margin: 0 auto;
+    max-width: 33.33vw;
+    max-height: 33.33vh;
+    object-fit: contain; /* Fit image to container without cutting off any part */
+  }
+  
+  /* Style the button group */
+  button {
+    background-color: #343a40;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Style the input box */
+  input[type=text] {
+    background-color: #343a40;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  /* Apply flexbox to the button group and input box */
+  button, input[type=text] {
+    display: block;
+  }
+  
+  /* Ensure the text box and everything is always below the image */
+  #previous, #jumpToLine, #goToLine, #next {
+    display: block;
+    margin: 0 auto;
+  }
+
+  img#label_image {
+    max-width: calc(100vw / 3);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 20px solid #a67c3c;
+    border-image-source: linear-gradient(to bottom right, #c8ad7f, #a67c3c);
+    border-image-slice: 1;
+  }
