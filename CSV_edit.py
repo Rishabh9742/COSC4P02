@@ -1,6 +1,7 @@
 from tkinter import *
-from tkinter import ttk
+from tkinter import ttk 
 import tkinter as tk
+import tkinter.messagebox
 import csv
 from PIL import Image, ImageTk
 import urllib.request
@@ -16,8 +17,10 @@ def append_to_csv():
             writer = csv.writer(file)
             writer.writerow([title_entry.get(), description_entry.get(), image_url_entry.get()])
             tk.messagebox.showinfo("Success", "Data appended to the CSV file.")
+            clear_text()
     except Exception as e:
         tk.messagebox.showerror("Error", f"Error occurred: {str(e)}")
+        clear_text()
         
 def delete_from_csv():
     try:
