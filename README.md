@@ -52,4 +52,4 @@ If you have any questions or issues, please contact any of the group members or 
 # License
 This project is licensed under the MIT License
 
-Thank you for visiting our virtual museum!
+
