@@ -76,6 +76,9 @@ class LinkedList:
         if not self.head:
             print("LinkedList is empty")
             return
+        if pos == 0:
+            self.head=self.head.next
+            return
         if pos == -1:
             self.deleteLast()
             return
