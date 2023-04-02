@@ -38,6 +38,7 @@
     max-height: 33.33vh;
     object-fit: contain; /* Fit image to container without cutting off any part */
   }
+ 
   
   /* button group */
   button {
@@ -67,7 +68,7 @@
   
   /* Ensure the text box and everything is always below the image */
   #previous, #jumpToLine, #goToLine, #next {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
   }
 
@@ -82,3 +83,63 @@
     border-image-source: linear-gradient(to bottom right, #c8ad7f, #a67c3c);
     border-image-slice: 1;
   }
+
+  #previous, #jumpToLine, #goToLine, #next {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* flex container for the button group and input box */
+#button-group {
+  display: flex;
+  justify-content: center; /* centers buttons horizontally */
+  align-items: center; /*centers buttons vertically */
+  margin-bottom: 10px;
+}
+
+/* button group */
+button {
+  background-color: #343a40;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+}
+
+input[type=text] {
+  background-color: #343a40;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+#previous {
+  margin-right: 10px;
+}
+
+#next {
+  margin-left: 10px;
+}
+
+.button-group, .jump-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.jump-group input[type=text], .jump-group button {
+  margin-left: 10px;
+}
+
+button, input[type=text], #jumpToLine, #goToLine {
+  display: inline-block;
+  margin: 10px;
+}
+
