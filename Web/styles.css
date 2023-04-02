@@ -177,8 +177,9 @@ button, input[type=text], #jumpToLine, #goToLine {
 }
 
 .light-mode button {
-  background-color: #1f1f1f;
-  color: #fff;
+  background-color: #fff;
+  color: #1f1f1f;
+  border: 1px solid #1f1f1f;
 }
 
 
