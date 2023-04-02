@@ -4,8 +4,10 @@ from PIL import Image, ImageTk
 import urllib.request
 
 line_num = 0
+data = [] # initialize data as an empty list
 
 def show_data(line_num):
+    global data # make data a global variable
     with open('test.json', 'r') as file:
         data = json.load(file)
         
@@ -32,12 +34,14 @@ def show_data(line_num):
 
 def next_line():
     global line_num
+    global data # make data a global variable
     if line_num < len(data) - 1:
         line_num += 1
         show_data(line_num)
 
 def previous_line():
     global line_num
+    global data # make data a global variable
     if line_num > 0:
         line_num -= 1
         show_data(line_num)
