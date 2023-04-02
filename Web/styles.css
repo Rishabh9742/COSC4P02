@@ -159,7 +159,9 @@ button, input[type=text], #jumpToLine, #goToLine {
   padding: 10px;
 }
 
-.light-mode {
+/* Light mode */
+
+body.light-mode {
   background-color: #fff;
   color: #1f1f1f;
 }
@@ -177,11 +179,9 @@ button, input[type=text], #jumpToLine, #goToLine {
 }
 
 .light-mode button {
-  background-color: #fff;
-  color: #1f1f1f;
-  border: 1px solid #1f1f1f;
+  background-color: #1f1f1f;
+  color: #fff;
 }
-
 
 .light-mode input[type=text] {
   background-color: #fff;
@@ -189,3 +189,7 @@ button, input[type=text], #jumpToLine, #goToLine {
   border: 1px solid #1f1f1f;
 }
 
+.light-mode #toggle {
+  background-color: #1f1f1f;
+  color: #fff;
+}
