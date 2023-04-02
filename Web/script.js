@@ -55,6 +55,23 @@ function jumpToLine() {
   }
 }
 
+function lightMode() {
+  const modeButton = document.querySelector('#mode');
+  const body = document.querySelector('body');
+
+  modeButton.addEventListener('click', function() {
+
+    body.classList.toggle('light-mode');//Toggles the light/dark mode
+
+    if (body.classList.contains('light-mode')){//changes button text
+      modeButton.textContent = 'Dark Mode';
+    } else {
+      modeButton.textContent = 'Light Mode';
+    }
+  });
+  
+}
+
 document.getElementById('previous').addEventListener('click', previousLine);
 document.getElementById('goToLine').addEventListener('click', jumpToLine);
 document.getElementById('next').addEventListener('click', nextLine);
