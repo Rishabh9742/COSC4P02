@@ -4,7 +4,7 @@ let data;
 async function showData(line_num) {
   const response = await fetch('https://raw.githubusercontent.com/Rishabh9742/COSC4P02/1462781a76cba0714f67640547ab6947599f5402/Web/test.json');
   const jsonData = await response.json();
-  data = jsonData.slice(0, -1);
+  data = jsonData;
 
   try {
     const { title, description, image_url } = data[line_num];
@@ -53,23 +53,6 @@ function jumpToLine() {
     showData(lineNum);
     input.value = '';
   }
-}
-
-function lightMode() {
-  const modeButton = document.querySelector('#mode');
-  const body = document.querySelector('body');
-
-  modeButton.addEventListener('click', function() {
-
-    body.classList.toggle('light-mode');//Toggles the light/dark mode
-
-    if (body.classList.contains('light-mode')){//changes button text
-      modeButton.textContent = 'Dark Mode';
-    } else {
-      modeButton.textContent = 'Light Mode';
-    }
-  });
-  
 }
 
 document.getElementById('previous').addEventListener('click', previousLine);
