@@ -2,7 +2,7 @@ let lineNum = 0;
 let data;
 
 async function showData(line_num) {
-  const response = await fetch('https://raw.githubusercontent.com/Rishabh9742/COSC4P02/main/test.json');
+  const response = await fetch('https://raw.githubusercontent.com/Rishabh9742/COSC4P02/1462781a76cba0714f67640547ab6947599f5402/Web/test.json');
   const jsonData = await response.json();
   data = jsonData.slice(0, -1);
 
