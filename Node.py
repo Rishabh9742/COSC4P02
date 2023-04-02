@@ -5,7 +5,6 @@ class Node:
         self.summary = summary
         self.facts = facts
         self.next = None
-        self.prev = None
 
     def deleteSummary(self):
         self.summary = ""
