@@ -2,41 +2,34 @@ let lineNum = 0;
 let data;
 
 async function showData(line_num) {
-    const response = await fetch('https://raw.githubusercontent.com/Rishabh9742/COSC4P02/main/data.csv');
-    const csvData = await response.text();
-    const rows = csvData.split('\n').map(row => row.split(','));
-    data = rows.slice(0, -1);
+  const response = await fetch('https://raw.githubusercontent.com/Rishabh9742/COSC4P02/main/test.json');
+  const jsonData = await response.json();
+  data = jsonData.slice(0, -1);
 
-  
-    try {
-      const [title, description, image_url] = data[line_num];
-  
-      document.getElementById('label_title').textContent = title;
-      document.getElementById('label_description').textContent = description;
-  
-      const image = await loadImage(image_url);
-      document.getElementById('label_image').src = image.src;
-  
-      const line_text = `Line ${line_num + 1} of ${data.length}`;
-      document.getElementById('label_line').textContent = line_text;
-    } catch (error) {
-      console.error(error);
-    }
-  
-    // console.log(data[lineNum]);
+  try {
+    const { title, description, image_url } = data[line_num];
+
+    document.getElementById('label_title').textContent = title;
+    document.getElementById('label_description').textContent = description;
+
+    const image = await loadImage(image_url);
+    document.getElementById('label_image').src = image.src;
+
+    const line_text = `Line ${line_num + 1} of ${data.length}`;
+    document.getElementById('label_line').textContent = line_text;
+  } catch (error) {
+    console.error(error);
   }
-  
-  showData(lineNum);
+}
 
-
-  function loadImage(url) {
-    return new Promise((resolve, reject) => {
-      const image = new Image();
-      image.onload = () => resolve(image);
-      image.onerror = () => reject(new Error(`Failed to load image from ${url}`));
-      image.src = url;
-    });
-  }
+function loadImage(url) {
+  return new Promise((resolve, reject) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => reject(new Error(`Failed to load image from ${url}`));
+    image.src = url;
+  });
+}
 
 function nextLine() {
   if (lineNum < data.length - 1) {
