@@ -158,3 +158,31 @@ button, input[type=text], #jumpToLine, #goToLine {
   margin: 10px;
   padding: 10px;
 }
+
+.light-mode {
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
+.light-mode #label_title {
+  color: #1f1f1f;
+}
+
+.light-mode #label_description {
+  color: #1f1f1f;
+}
+
+.light-mode #label_line {
+  color: #1f1f1f;
+}
+
+.light-mode button {
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
+.light-mode input[type=text] {
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
