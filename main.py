@@ -1,20 +1,23 @@
 import tkinter as tk
-import csv
+import json
 from PIL import Image, ImageTk
 import urllib.request
 
 line_num = 0
+data = [] # initialize data as an empty list
 
 def show_data(line_num):
-    with open('data.csv', 'r') as file:
-        reader = csv.reader(file)
-        global data
-        data = list(reader)
+    global data # make data a global variable
+    with open('test.json', 'r') as file:
+        data = json.load(file)
         
         try:
-            title, description, image_url = data[line_num]
+            node = data[line_num]
+            title = node['title']
+            description = node['description']
+            image_url = node['image_url']
         except IndexError:
-            tk.messagebox.showerror("Error", "Line number not found in the CSV")
+            tk.messagebox.showerror("Error", "Line number not found in the JSON")
             return
         
         label_title.config(text=title)
@@ -31,12 +34,14 @@ def show_data(line_num):
 
 def next_line():
     global line_num
+    global data # make data a global variable
     if line_num < len(data) - 1:
         line_num += 1
         show_data(line_num)
 
 def previous_line():
     global line_num
+    global data # make data a global variable
     if line_num > 0:
         line_num -= 1
         show_data(line_num)
@@ -47,7 +52,7 @@ def jump_to_line():
             show_data(line_num)           
 
 root = tk.Tk()
-root.title("CSV Data Display")
+root.title("JSON Data Display")
 
 label_title = tk.Label(root, text="")
 label_title.grid(row=0, column=0, columnspan=3)
