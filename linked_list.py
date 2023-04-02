@@ -129,3 +129,14 @@ class LinkedList:
             total+=1
             cur = cur.next
         return total
+
+'''  
+n1 = Node("t1", "d1", "s1", "f1")
+n2 = Node("t2", "d2", "s2", "f2")
+n3 = Node("t3", "d3", "s3", "f3")
+l1 = LinkedList()
+l1.addNode(n1)
+l1.addNode(n2)
+l1.addNode(n3)
+l1.display()
+'''
