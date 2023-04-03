@@ -122,6 +122,10 @@ input[type=text] {
   width: 200px;
 }
 
+input[type=text]:hover {
+  background-color: #87cefa;
+}
+
 #previous {
   margin-right: 10px;
 }
@@ -199,5 +203,9 @@ body.light-mode {
 }
 
 .light-mode button:hover {
+  background-color: #87cefa;
+}
+
+.light-mode input[type=text]:hover {
   background-color: #87cefa;
 }
