@@ -209,3 +209,8 @@ body.light-mode {
 .light-mode input[type=text]:hover {
   background-color: #87cefa;
 }
+
+.go-to-line {
+  display: flex;
+  justify-content: center;
+}
