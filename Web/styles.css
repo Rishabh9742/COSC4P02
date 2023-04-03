@@ -216,3 +216,11 @@ body.light-mode {
   display: flex;
   justify-content: center;
 }
+
+/* Places the light/dark mode on the right corner */
+#light-mode-container {
+  z-index: 10;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
