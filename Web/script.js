@@ -32,17 +32,13 @@ function loadImage(url) {
 }
 
 function nextLine() {
-  if (lineNum < data.length - 1) {
-    lineNum++;
-    showData(lineNum);
-  }
+  lineNum = (lineNum + 1) % data.length; // Cycle back when reaching the last image
+  showData(lineNum);
 }
 
 function previousLine() {
-  if (lineNum > 0) {
-    lineNum--;
-    showData(lineNum);
-  }
+  lineNum = (lineNum - 1 + data.length) % data.length; // Cycle forward when reaching the first image
+  showData(lineNum);
 }
 
 function jumpToLine() {
