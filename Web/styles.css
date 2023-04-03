@@ -36,7 +36,9 @@
     margin: 0 auto;
     max-width: 33.33vw;
     max-height: 33.33vh;
-    object-fit: contain; /* Fit image to container without cutting off any part */
+    object-fit: cover; /* Fit image to container without cutting off any part */
+    width: 300;
+    height: 300;
   }
  
   
