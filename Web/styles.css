@@ -224,3 +224,11 @@ body.light-mode {
   top: 10px;
   right: 10px;
 }
+
+#Quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+}
