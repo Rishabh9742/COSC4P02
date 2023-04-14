@@ -20,6 +20,24 @@ async function showData(line_num) {
   } catch (error) {
     console.error(error);
   }
+
+  // Refreshes the questions based on the JSON file
+  const question = data[line_num].question; 
+  const choices = data[line_num].choices; 
+
+  //Refreshes the question and choices in the HTML
+  document.querySelector('#quizForm label').textContent = question;
+  choices.forEach((choice, index) => {
+    const input = document.querySelector(`#quizForm input[name="q1"]:nth-child(${index * 2 + 2})`);
+    const label = input.nextSibling;
+    input.value = choice;
+    label.textContent = ` ${choice}`;
+  });
+
+  // Reset the question and answer
+  document.getElementById('quizForm').reset();
+  document.getElementById('quizResult').textContent = '';
+
 }
 
 function loadImage(url) {
@@ -68,8 +86,32 @@ function lightMode() {
   
 }
 
+function handleQuizSubmission() {
+  // Get the correct answer and the form
+  const form = document.getElementById('quizForm');
+  const quizResult = document.getElementById('quizResult');
+  const correctAnswer = data[lineNum].correct_answer; 
+
+  // Get the selected answer
+  const selectedAnswer = Array.from(form.elements).find((element) => element.checked);
+
+  // Verify that an answer was selected
+  if (!selectedAnswer) {
+    quizResult.textContent = 'Please select an answer.';
+    return;
+  }
+
+  // Inform if the answer is correct or incorrect
+  if (selectedAnswer.value === correctAnswer) {
+    quizResult.textContent = 'Correct!';
+  } else {
+    quizResult.textContent = 'Incorrect. Try again.';
+  }
+}
+
 document.getElementById('previous').addEventListener('click', previousLine);
 document.getElementById('goToLine').addEventListener('click', jumpToLine);
 document.getElementById('next').addEventListener('click', nextLine);
+document.getElementById('submitAnswer').addEventListener('click', handleQuizSubmission);
 
 showData(lineNum);

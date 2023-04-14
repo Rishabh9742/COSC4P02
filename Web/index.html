@@ -28,16 +28,18 @@
     <div id="Quiz">
     <h1>Museum Quiz</h1>
 	  <p>Test Your Knowledge:</p>
-	    <form>
+    <form id="quizForm">
 		    <div>
 			    <label>Sample Question</label>
             <br>
-			      <input type="radio" name="q1" value="a"> a) placeholder<br>
-			      <input type="radio" name="q1" value="b"> b) placeholder<br>
-			      <input type="radio" name="q1" value="c"> c) placeholder<br>
-			      <input type="radio" name="q1" value="d"> d) placeholder<br>
+			      <input type="radio" name="q1" value="a"> a) Choice A<br>
+            <input type="radio" name="q1" value="b"> b) Choice B<br>
+            <input type="radio" name="q1" value="c"> c) Choice C<br>
+            <input type="radio" name="q1" value="d"> d) Choice D<br>
 		    </div>
-        <button type="button" >Submit Answer</button>
+          <button type="button" id="submitAnswer">Submit Answer</button>
+    </form>
+    <p id="quizResult"></p>
       </div>
     <script src="script.js"></script>
     <script>
