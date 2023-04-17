@@ -8,19 +8,42 @@
 
   </head>
   <body>
+    <div id="light-mode-position">
+      <button id="mode">Light Mode</button>
+    </div>
     <h1 id="label_title"></h1>
     <p id="label_description"></p>
     <p id="label_line"></p>
     <img id="label_image" src="" alt="Image">
-    <div id="button-group">
+    <nav id="button-group">
       <button id="previous">Previous</button>
       <button id="next">Next</button>
-      <button id="mode">Light mode</button>
-    </div>
-    <div class="jump-group">
-    <input type="text" id="jumpToLine" placeholder="Jump to line...">
-      <button id="goToLine">Go to line</button>
-    </div>
+    </nav>
+    <section class="jump-group">
+      <input type="text" id="jumpToLine" placeholder="Jump to line...">
+      <div class="go-to-line">
+        <button id="goToLine">Go to line</button>
+      </div>
+    </section>
+    <div id="Quiz">
+    <h1>Museum Quiz</h1>
+	  <p>Test Your Knowledge:</p>
+    <form id="quizForm">
+		    <div>
+			    <label>Sample Question</label>
+            <br>
+			      <input type="radio" name="q1" value="a"> a) Choice A<br>
+            <input type="radio" name="q1" value="b"> b) Choice B<br>
+            <input type="radio" name="q1" value="c"> c) Choice C<br>
+            <input type="radio" name="q1" value="d"> d) Choice D<br>
+		    </div>
+          <button type="button" id="submitAnswer">Submit Answer</button>
+    </form>
+    <p id="quizResult"></p>
+      </div>
     <script src="script.js"></script>
+    <script>
+      lightMode();
+    </script>
   </body>
 </html>

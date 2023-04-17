@@ -36,7 +36,9 @@
     margin: 0 auto;
     max-width: 33.33vw;
     max-height: 33.33vh;
-    object-fit: contain; /* Fit image to container without cutting off any part */
+    object-fit: cover; /* Fit image to container without cutting off any part */
+    width: 300;
+    height: 300;
   }
  
   
@@ -50,6 +52,10 @@
     margin: 10px;
     padding: 10px;
   }
+
+button:hover {
+  background-color: #87cefa;
+}
   
   input[type=text] {
     background-color: #343a40;
@@ -118,6 +124,10 @@ input[type=text] {
   width: 200px;
 }
 
+input[type=text]:hover {
+  background-color: #87cefa;
+}
+
 #previous {
   margin-right: 10px;
 }
@@ -159,8 +169,10 @@ button, input[type=text], #jumpToLine, #goToLine {
   padding: 10px;
 }
 
-.light-mode {
-  background-color: #fff;
+/* Light mode */
+
+body.light-mode {
+  background-color: #f5f5f5;
   color: #1f1f1f;
 }
 
@@ -177,12 +189,46 @@ button, input[type=text], #jumpToLine, #goToLine {
 }
 
 .light-mode button {
-  background-color: #fff;
-  color: #1f1f1f;
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
 .light-mode input[type=text] {
   background-color: #fff;
   color: #1f1f1f;
+  border: 1px solid #1f1f1f;
 }
 
+.light-mode #toggle {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.light-mode button:hover {
+  background-color: #87cefa;
+}
+
+.light-mode input[type=text]:hover {
+  background-color: #87cefa;
+}
+
+.go-to-line {
+  display: flex;
+  justify-content: center;
+}
+
+/* Places the light/dark mode on the right corner */
+#light-mode-container {
+  z-index: 10;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#Quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+}
