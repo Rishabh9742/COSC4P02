@@ -28,7 +28,7 @@ async function showData(line_num) {
   //Refreshes the question and choices in the HTML
   document.querySelector('#quizForm label').textContent = question;
   choices.forEach((choice, index) => {
-    const input = document.querySelector(`#quizForm input[name="q1"]:nth-child(${index * 2 + 2})`);
+    const input = document.querySelector(`#quizForm input[name="question"]:nth-of-type(${index + 1})`);
     const label = input.nextSibling;
     input.value = choice;
     label.textContent = ` ${choice}`;
@@ -102,7 +102,7 @@ function handleQuizSubmission() {
   }
 
   // Inform if the answer is correct or incorrect
-  if (selectedAnswer.value === correctAnswer) {
+  if (selectedAnswer.value[0] === correctAnswer) {
     quizResult.textContent = 'Correct!';
   } else {
     quizResult.textContent = 'Incorrect. Try again.';

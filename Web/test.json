@@ -5,15 +5,15 @@
         "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png",
         "question": "Question 1",
         "choices": ["a) Choice A", "b) Choice B", "c) Choice C", "d) Choice D"],
-        "correct_answer": "a) Choice A"
+        "correct_answer": "a"
     },
     {
         "title": "second test",
         "description": "second JSON test",
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg",
         "question": "Question 2",
-        "choices": ["a) Option A", "b) Choice B", "c) Choice C", "d) Choice D"],
-        "correct_answer": "b) Choice B"
+        "choices": ["a) Choice A", "b) Choice B", "c) Choice C", "d) Choice D"],
+        "correct_answer": "b"
     },
     {
         "title": "road",
@@ -21,6 +21,6 @@
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Road_in_Norway.jpg/1200px-Road_in_Norway.jpg",
         "question": "Question 3",
         "choices": ["a) Choice A", "b) Choice B", "c) Choice C", "d) Choice D"],
-        "correct_answer": "c) Choice C"
+        "correct_answer": "c"
     }
 ]
