@@ -5,7 +5,7 @@
         "image_url": "https://www.theoldcourthouse.ca/sites/default/files/styles/banner_s/public/paragraph/images/MAIN%20The%20Old%20Court%20House%20Outdoor%20Ceremony.jpg?itok=OB9YtDoP",
         "question": "When was The Old Courthouse built?",
         "choices": ["a) 1848", "b) 1850", "c) 1820", "d) 1900"],
-        "correct_answer": "a) 1848"
+        "correct_answer": "a"
     },
     {
         "title": "Morningstar Mill",
@@ -13,7 +13,7 @@
         "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mornigstar_Mill_and_DeCew_Falls%2C_St._Catharines%2C_Ontario%2C_Canada.jpg",
         "question": "What year was Morningstar Mill built?",
         "choices": ["a) 1860", "b) 1872", "c) 1880", "d) 1855"],
-        "correct_answer": "b) 1872"
+        "correct_answer": "b"
     },
     {
         "title": "Rodman Hall Art Centre",
@@ -21,6 +21,6 @@
         "image_url": "https://brocku.ca/rodman-hall/wp-content/uploads/sites/92/Back-Gardens-Panorama-High-Res.jpg?x99464",
         "question": "What is the primary purpose of Rodman Hall Art Centre today?",
         "choices": ["a) Private residence", "b) Government office", "c) Art gallery", "d) University campus"],
-        "correct_answer": "c) Art gallery"
+        "correct_answer": "c"
     }
 ]
