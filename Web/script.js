@@ -25,16 +25,6 @@ async function showData(line_num) {
   const question = data[line_num].question; 
   const choices = data[line_num].choices; 
 
-// //Refreshes the question and choices in the HTML
-// document.querySelector('#quizForm label').textContent = question;
-// if (choices) {
-//   choices.forEach((choice, index) => {
-//     const input = document.querySelector(`#quizForm input[name="q${i}"]:nth-child(${index * 2 + 2})`);
-//     const label = input.nextElementSibling;
-//     input.value = choice.slice(0, 1); 
-//     label.textContent = ` ${choice}`;
-//   });
-// }
 
 
   // Reset the question and answer
@@ -91,11 +81,7 @@ function lightMode() {
   
 }
 
-const getAnswer = (i) => {
-  const radioInput = document.querySelector('input[type="radio"]');
-  const value = radioInput.getAttribute('value').trim();
-  return value.trim();
-};
+
 
 
 
@@ -122,7 +108,7 @@ function handleQuizSubmission() {
   } else {
     quizResult.textContent = 'Incorrect. Try again.';
   }
-  // console.log(getAnswer(selectedAnswer), correctAnswer)
+
 }
 
 document.getElementById('previous').addEventListener('click', previousLine);
