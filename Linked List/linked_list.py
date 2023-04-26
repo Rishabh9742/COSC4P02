@@ -129,3 +129,14 @@ class LinkedList:
             total+=1
             cur = cur.next
         return total
+       
+    def rate_node(node_name, rating):
+        node_data[node_name]["ratings"].append(rating)
+
+        # Function to allow users to submit a review for a node
+    def submit_review(node_name, review):
+        node_data[node_name]["reviews"].append(review)
+
+         # Example usage
+         rate_node("item1", 4)
+         submit_review("item1", "Good item!")
