@@ -1,0 +1,19 @@
+import json
+
+# Define a timeline dictionary
+timeline = {
+    "event1": "2023-04-26",
+    "event2": "2023-04-27",
+    "event3": "2023-04-28"
+}
+
+# Save the timeline to a file
+with open("timeline.json", "w") as f:
+    json.dump(timeline, f)
+
+# Load the timeline from the file
+with open("timeline.json", "r") as f:
+    loaded_timeline = json.load(f)
+
+# Print the loaded timeline
+print(loaded_timeline)
