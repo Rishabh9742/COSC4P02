@@ -232,3 +232,48 @@ body.light-mode {
   align-items: center; 
   color: #fff;
 }
+
+#Quiz h1 {
+  margin-bottom: 10px;
+}
+
+#Quiz p {
+  margin-bottom: 10px;
+}
+
+#quizForm div {
+  margin-bottom: 10px;
+}
+
+#submitAnswer {
+  margin-top: 10px;
+}
+
+/* Phone View */
+@media only screen and (max-width: 768px) {
+  #label_title {
+    font-size: 24px;
+  }
+  #label_description {
+    font-size: 16px;
+  }
+  #label_line {
+    font-size: 18px;
+  }
+  button, input[type=text] {
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+  }
+  img#label_image {
+    max-width: calc(100vw / 1.5);
+    padding: 10px;
+    border: 10px solid #a67c3c;
+  }
+  #previous, #jumpToLine, #goToLine, #next {
+    margin: 5px;
+  }
+  #button-group, .jump-group {
+    margin-top: 10px;
+  }
+}
