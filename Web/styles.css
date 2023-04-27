@@ -259,6 +259,11 @@ body.light-mode {
   height: 30px;
 }
 
+#accessibility-button:hover {
+  background-color: #7a6f6f;
+}
+
+
 #accessibility-menu {
   display: none; /* Hide the accessibility menu by default */
   position: absolute;
