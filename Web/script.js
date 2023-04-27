@@ -80,16 +80,30 @@ function lightMode() {
   });
   
 }
+
 /*
 const accessibilityButton = document.getElementById('accessibility-button');
-const accessibilityMenu = document.getElementById('accessibility-menu');
+let accessibilityMenu = document.getElementById('accessibility-menu');
 
 accessibilityButton.addEventListener('click', () => {
   accessibilityButton.classList.toggle('active');
   accessibilityMenu.classList.toggle('active');
 });
-*/
+//*/
 
+function toggleAccessibilityMenu() {
+  const accessibilityButton = document.getElementById('accessibility-button');
+  const accessibilityMenu = document.getElementById('accessibility-menu');
+
+  if (accessibilityMenu) {
+    accessibilityButton.addEventListener('click', () => {
+      accessibilityButton.classList.toggle('active');
+      accessibilityMenu.classList.toggle('active');
+    });
+  }
+}
+
+toggleAccessibilityMenu();
 
 
 

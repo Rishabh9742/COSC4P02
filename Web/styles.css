@@ -247,8 +247,7 @@ body.light-mode {
   overflow: hidden;
 }
 
-#accessibility-button 
-  .icon {
+#accessibility-button .icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -258,6 +257,14 @@ body.light-mode {
   background-size: 30px 30px;
   width: 30px;
   height: 30px;
+}
+
+#accessibility-menu {
+  display: none; /* Hide the accessibility menu by default */
+}
+
+#accessibility-menu.active {
+  display: block; /* Show the accessibility menu when the button is clicked */
 }
 
 #Quiz {
