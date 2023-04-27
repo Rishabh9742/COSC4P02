@@ -80,6 +80,7 @@ function lightMode() {
   });
   
 }
+/*
 const accessibilityButton = document.getElementById('accessibility-button');
 const accessibilityMenu = document.getElementById('accessibility-menu');
 
@@ -87,7 +88,7 @@ accessibilityButton.addEventListener('click', () => {
   accessibilityButton.classList.toggle('active');
   accessibilityMenu.classList.toggle('active');
 });
-
+*/
 
 
 
