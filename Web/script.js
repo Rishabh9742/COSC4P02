@@ -96,10 +96,10 @@ function toggleAccessibilityMenu() {
   const accessibilityMenu = document.getElementById('accessibility-menu');
 
   if (accessibilityMenu) {
-    accessibilityButton.addEventListener('click', () => {
+    
       accessibilityButton.classList.toggle('active');
       accessibilityMenu.classList.toggle('active');
-    });
+    
   }
 }
 
