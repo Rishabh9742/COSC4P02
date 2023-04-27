@@ -276,6 +276,18 @@ body.light-mode {
   margin-bottom: 10px;
 }
 
+.light-mode #Quiz {
+  color: #1f1f1f;
+  }
+  
+  .light-mode #Quiz h1 {
+  color: #1f1f1f;
+  }
+  
+  .light-mode #Quiz p {
+  color: #1f1f1f;
+  }
+
 #quizForm div {
   margin-bottom: 10px;
 }
