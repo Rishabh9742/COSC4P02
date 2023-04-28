@@ -474,3 +474,30 @@ h1 {
 .light-mode h1 {
   color: #1f1f1f;
 }
+
+
+/* New styles for the directions.html page */
+.directions-page {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.directions-page h2 {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+.directions-page p {
+  margin-bottom: 1em;
+}
+
+.directions-page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.directions-page section {
+  margin-bottom: 2em;
+}
