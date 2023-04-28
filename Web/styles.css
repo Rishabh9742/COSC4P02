@@ -103,6 +103,15 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* Set margins for buttons in button group */
+#previous {
+  margin-right: 50px;
+}
+
+#next {
+  margin-left: 50px;
+}
+
 /* button group */
 button {
   background-color: #343a40;
