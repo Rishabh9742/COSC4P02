@@ -65,24 +65,59 @@ function jumpToLine() {
 }
 
 function lightMode() {
-  const modeButton = document.querySelector('#mode');
+  const modeButton = document.querySelector('#accessibility-menu li:nth-child(3) a');
   const body = document.querySelector('body');
 
-  modeButton.addEventListener('click', function() {
 
-    body.classList.toggle('light-mode');//Toggles the light/dark mode
-
-    if (body.classList.contains('light-mode')){//changes button text
+    
+    body.classList.toggle('light-mode'); // toggle the light/dark mode
+    
+    if (body.classList.contains('light-mode')) { // change button text
       modeButton.textContent = 'Dark Mode';
     } else {
       modeButton.textContent = 'Light Mode';
     }
-  });
-  
+ 
 }
 
 
 
+/*
+const accessibilityButton = document.getElementById('accessibility-button');
+let accessibilityMenu = document.getElementById('accessibility-menu');
+
+accessibilityButton.addEventListener('click', () => {
+  accessibilityButton.classList.toggle('active');
+  accessibilityMenu.classList.toggle('active');
+});
+//*/
+
+function toggleAccessibilityMenu() {
+  const accessibilityButton = document.getElementById('accessibility-button');
+  const accessibilityMenu = document.getElementById('accessibility-menu');
+
+  if (accessibilityMenu) {
+    
+      accessibilityButton.classList.toggle('active');
+      accessibilityMenu.classList.toggle('active');
+    
+  }
+}
+
+toggleAccessibilityMenu();
+
+
+function increaseFontSize() {
+  const body = document.getElementsByTagName('body')[0];
+  const currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+  body.style.fontSize = (currentSize + 1) + 'px';
+}
+
+function decreaseFontSize() {
+  const body = document.getElementsByTagName('body')[0];
+  const currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+  body.style.fontSize = (currentSize - 1) + 'px';
+}
 
 
 function handleQuizSubmission() {
