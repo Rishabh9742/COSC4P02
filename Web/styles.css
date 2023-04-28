@@ -261,7 +261,7 @@ body.light-mode {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url('accessibility-icon.png');
+  background-image: url('https://img.icons8.com/ios/452/accessibility2.png');
   background-repeat: no-repeat;
   background-size: 30px 30px;
   width: 30px;
