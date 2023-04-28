@@ -112,6 +112,12 @@ function increaseFontSize() {
   body.style.fontSize = (currentSize + 1) + 'px';
 }
 
+function decreaseFontSize() {
+  const body = document.getElementsByTagName('body')[0];
+  const currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+  body.style.fontSize = (currentSize - 1) + 'px';
+}
+
 
 function handleQuizSubmission() {
   // Get the correct answer and the form
