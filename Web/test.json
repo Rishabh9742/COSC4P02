@@ -1,90 +1,90 @@
 [
-        {
+    {
         "title": "Quilt",
         "description": "The Log Cabin quilt is another patchwork style quilt that has a distinctive design and is very versatile with many variations. Strips of fabric, or 'logs,' are stitched around a square 'hearth' to form a block, or 'cabin.' Depending on how logs are pieced, and blocks arranged, a Log Cabin can take varied forms, such as Barn Raising, Straight Furrow, Sunshine and Shadow, and Pineapple. In the nineteenth century, the Log Cabin quilt pattern was described as 'Canadian patchwork,' evoking the colonial homestead. In traditional Log Cabin blocks, one half is made of dark fabrics and the other half light.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/086/thumbs/9776.jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
+    },
+    {
         "title": "Cap",
         "description": "A white cap with purple embroidered side flaps and purple trim along the entire cap. A pattern of pink and blue flowers with green leaves decorate the crown.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/052/9861192.jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
+    },
+    {
         "title": "Sauceboat",
         "description": "Gravy boat and saucer used in the Moffat Inn (later Doyle's Hotel) at Picton and Davy Streets. Donor: J.J. Doyle, 1910. A white sauceboat with blue floral patterns. Both the base and the cup have 'DAVENPORT' printed on to it. The tray is rectangular in shape and has two square handles.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/032/96971(a_b).jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
+    },
+    {
         "title": "Medal",
         "description": "The Queen's South Africa Medal was given to troops who served in South Africa between 11 October 1899 and 31 May 1902. The obverse depicts a side view of a crowned Queen Victoria with the text 'VICTORIA REGINA ET IMPERATRIX' written around the image. The reverse depicts Britannia holding the Union Flag and a laurel wreath. In the background the men are marching towards the coast. The words 'SOUTH AFRICA' are written above Britannia.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/027/995302.jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
+    },
+    {
         "title": "Coin",
         "description": "An American one cent coin with the words 'United States of America' round the coin edge, and decorated with an image of a wreath and 'One Cent' written in the middle. On the other side is an image of a female face surrounded by thirteen stars. Written on the crown on the female head reads 'Liberty'. This coin is dated 1832.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/026/991872.jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
+    },
+    {
         "title": "Shoes",
         "description": "A pair of shoes that have hand stitched embroidery in greens, purple, red, and blue. A triangular wooden sole with a slightly elevated heel that is covered in silk brocade. These shoes were given To Mrs. E. Robertson (Miss Minnie Smith), a Missionary in China.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/052/9861198(a_b).jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
-        },
-        {
-            "title": "Trowel",
-            "description": "A diamond shaped silver trowel with a bakelite handle. There is an inscription on the front of trowel that reads 'used in laying of/cornerstone of Niagara/District High School/by Hon. Charles Daley/Ontario Minister of Labour July 29th 1956.'. On the back of the trowel reads 'Made in Sheffield, England'.",
-            "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/030/2010024086.jpg",
-            "question": "Sample question",
-            "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
-            "correct_answer": "a) Choice 1"
-            },
-            {
-            "title": "Pin",
-            "description": "Pin commemorating the 75th Anniversary of the opening of Memorial Hall at the Niagara Historical Museum. Featuring a blue line drawing of Memorial Hall and the dates 1907-1982, the pin reflects the anniversary of the first purpose-built museum in Ontario.",
-            "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/041/98889.jpg",
-            "question": "Sample question",
-            "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
-            "correct_answer": "a) Choice 1"
-            },
-            {
-            "title": "Scabbard",
-            "description": "For a full description see Related Record, 'Sword - 978.11.1(A)'.",
-            "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/048/thumbs/978111(b).jpg",
-            "question": "Sample question",
-            "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
-            "correct_answer": "a) Choice 1"
-            },
-            {
-                "title": "Box: Jewellery",
-                "description": "A jewellery box which belonged to Kate Lynch who lived at 33 Gate Street, Niagara-on-the-Lake. The wooden case is stained with French polished. Opening the box there is a pull-out compartment for papers on the under side of the lid. A mirror is missing from the under side of the lid, but the velvet frame has gold applied floral decoration. In the base there is an insert, that can be removed, of 22 compartments with velvet lids and brass handles (three are missing lids). There is also an inner compartment beneath the insert. Decorated, engraved brass lock mechanism and hinges are finished with mercurial gold, giving the box a lovely overall look.",
-                "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/043/2006003001.jpg",
-                "question": "Sample question",
-                "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
-                "correct_answer": "a) Choice 1"
-                },
-                {
-                "title": "Suitcase",
-                "description": "A velvet carpet bag style suitcase with a deep purple, red, and brown geometric pattern design. The bag has embossed cloth on both sides, bottom, and handle. The inside is lined with white cotton and closes with a brass fastener and two metal buttons.",
-                "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/050/972312.jpg",
-                "question": "Sample question",
-                "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
-                "correct_answer": "a) Choice 1"
-                }
-    ]
+    },
+    {
+        "title": "Trowel",
+        "description": "A diamond shaped silver trowel with a bakelite handle. There is an inscription on the front of trowel that reads 'used in laying of/cornerstone of Niagara/District High School/by Hon. Charles Daley/Ontario Minister of Labour July 29th 1956.'. On the back of the trowel reads 'Made in Sheffield, England'.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/030/2010024086.jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a) Choice 1"
+    },
+    {
+        "title": "Pin",
+        "description": "Pin commemorating the 75th Anniversary of the opening of Memorial Hall at the Niagara Historical Museum. Featuring a blue line drawing of Memorial Hall and the dates 1907-1982, the pin reflects the anniversary of the first purpose-built museum in Ontario.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/041/98889.jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a) Choice 1"
+    },
+    {
+        "title": "Scabbard",
+        "description": "For a full description see Related Record, 'Sword - 978.11.1(A)'.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/048/thumbs/978111(b).jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a) Choice 1"
+    },
+    {
+        "title": "Box: Jewellery",
+        "description": "A jewellery box which belonged to Kate Lynch who lived at 33 Gate Street, Niagara-on-the-Lake. The wooden case is stained with French polished. Opening the box there is a pull-out compartment for papers on the under side of the lid. A mirror is missing from the under side of the lid, but the velvet frame has gold applied floral decoration. In the base there is an insert, that can be removed, of 22 compartments with velvet lids and brass handles (three are missing lids). There is also an inner compartment beneath the insert. Decorated, engraved brass lock mechanism and hinges are finished with mercurial gold, giving the box a lovely overall look.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/043/2006003001.jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a) Choice 1"
+    },
+    {
+        "title": "Suitcase",
+        "description": "A velvet carpet bag style suitcase with a deep purple, red, and brown geometric pattern design. The bag has embossed cloth on both sides, bottom, and handle. The inside is lined with white cotton and closes with a brass fastener and two metal buttons.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/050/972312.jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a) Choice 1"
+    }
+]
