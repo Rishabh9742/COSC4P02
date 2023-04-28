@@ -476,11 +476,14 @@ h1 {
 }
 
 
-/* New styles for the directions.html page */
+/* styles for the directions.html page */
 .directions-page {
   color: #fff;
   font-size: 1.1em;
   line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .directions-page h2 {
@@ -496,8 +499,15 @@ h1 {
   max-width: 100%;
   height: auto;
   margin-bottom: 1em;
+  display: block;
 }
 
 .directions-page section {
   margin-bottom: 2em;
+}
+
+/* Centers Images */
+.directions-page img {
+  margin-left: auto;
+  margin-right: auto;
 }
