@@ -58,14 +58,24 @@ Scrum method, the reason we believe this is the superior method for our project 
 
 # Example
 ```  
-{
+  {
         "title": "Quilt",
         "description": "The Log Cabin quilt is another patchwork style quilt that has a distinctive design and is very versatile with many variations. Strips of fabric, or 'logs,' are stitched around a square 'hearth' to form a block, or 'cabin.' Depending on how logs are pieced, and blocks arranged, a Log Cabin can take varied forms, such as Barn Raising, Straight Furrow, Sunshine and Shadow, and Pineapple. In the nineteenth century, the Log Cabin quilt pattern was described as 'Canadian patchwork,' evoking the colonial homestead. In traditional Log Cabin blocks, one half is made of dark fabrics and the other half light.",
         "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/086/thumbs/9776.jpg",
         "question": "Sample question",
         "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
         "correct_answer": "a) Choice 1"
+  }
+  {
+        "title": "Quilt",
+        "description": "The Log Cabin quilt is another patchwork style quilt that has a distinctive design and is very versatile with many variations. Strips of fabric, or 'logs,' are stitched around a square 'hearth' to form a block, or 'cabin.' Depending on how logs are pieced, and blocks arranged, a Log Cabin can take varied forms, such as Barn Raising, Straight Furrow, Sunshine and Shadow, and Pineapple. In the nineteenth century, the Log Cabin quilt pattern was described as 'Canadian patchwork,' evoking the colonial homestead. In traditional Log Cabin blocks, one half is made of dark fabrics and the other half light.",
+        "image_url": "https://s3.amazonaws.com/pastperfectonline/images/museum_74/086/thumbs/9776.jpg",
+        "question": "Sample question",
+        "choices": ["a) Choice 1", "b) Choice 2", "c) Choice 3", "d) Choice 4"],
+        "correct_answer": "a"
     }
+    
+ 
 ```
 
 # JSON Edit
